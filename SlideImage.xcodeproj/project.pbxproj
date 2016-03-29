@@ -15,6 +15,8 @@
 		58F64A4B1CAA80F4004A4C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F64A491CAA80F4004A4C94 /* LaunchScreen.storyboard */; };
 		58F64A561CAA80F4004A4C94 /* SlideImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F64A551CAA80F4004A4C94 /* SlideImageTests.m */; };
 		58F64A611CAA80F4004A4C94 /* SlideImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F64A601CAA80F4004A4C94 /* SlideImageUITests.m */; };
+		58F64A721CAA8214004A4C94 /* SHGImageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F64A701CAA8214004A4C94 /* SHGImageHeaderView.m */; };
+		58F64A731CAA8214004A4C94 /* SHGImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F64A711CAA8214004A4C94 /* SHGImageHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		58F64A5C1CAA80F4004A4C94 /* SlideImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F64A601CAA80F4004A4C94 /* SlideImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideImageUITests.m; sourceTree = "<group>"; };
 		58F64A621CAA80F4004A4C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F64A6F1CAA8214004A4C94 /* SHGImageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGImageHeaderView.h; sourceTree = "<group>"; };
+		58F64A701CAA8214004A4C94 /* SHGImageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGImageHeaderView.m; sourceTree = "<group>"; };
+		58F64A711CAA8214004A4C94 /* SHGImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHGImageHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		58F64A2F1CAA80F4004A4C94 = {
 			isa = PBXGroup;
 			children = (
+				58F64A6E1CAA8208004A4C94 /* Views */,
 				58F64A3A1CAA80F4004A4C94 /* SlideImage */,
 				58F64A541CAA80F4004A4C94 /* SlideImageTests */,
 				58F64A5F1CAA80F4004A4C94 /* SlideImageUITests */,
@@ -138,6 +144,16 @@
 				58F64A621CAA80F4004A4C94 /* Info.plist */,
 			);
 			path = SlideImageUITests;
+			sourceTree = "<group>";
+		};
+		58F64A6E1CAA8208004A4C94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58F64A6F1CAA8214004A4C94 /* SHGImageHeaderView.h */,
+				58F64A701CAA8214004A4C94 /* SHGImageHeaderView.m */,
+				58F64A711CAA8214004A4C94 /* SHGImageHeaderView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F64A731CAA8214004A4C94 /* SHGImageHeaderView.xib in Resources */,
 				58F64A4B1CAA80F4004A4C94 /* LaunchScreen.storyboard in Resources */,
 				58F64A481CAA80F4004A4C94 /* Assets.xcassets in Resources */,
 				58F64A461CAA80F4004A4C94 /* Main.storyboard in Resources */,
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F64A721CAA8214004A4C94 /* SHGImageHeaderView.m in Sources */,
 				58F64A431CAA80F4004A4C94 /* ViewController.m in Sources */,
 				58F64A401CAA80F4004A4C94 /* AppDelegate.m in Sources */,
 				58F64A3D1CAA80F4004A4C94 /* main.m in Sources */,
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gsh.SlideImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gsh.SlideImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
